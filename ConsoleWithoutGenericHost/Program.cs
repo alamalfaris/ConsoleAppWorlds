@@ -6,18 +6,18 @@ namespace ConsoleWithoutGenericHost
 {
 	internal class Program
 	{
-		static void Main(string[] args)
+		static async Task Main(string[] args)
 		{
 
 			var serviceCollections = ConfigureServiceCollection();
 
 			ITry tryService = new Try(serviceCollections);
-			tryService.PrintKeyOne();
+			await tryService.PrintKeyOne();
 		}
 
 		static ServiceCollection ConfigureServiceCollection()
 		{
-			var services = new ServiceCollection();
+            var services = new ServiceCollection();
 
 			// Build a config object, using env vars and JSON providers.
 			IConfigurationRoot config = new ConfigurationBuilder()
