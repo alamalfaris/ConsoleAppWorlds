@@ -38,7 +38,7 @@ namespace ConsoleRegex
 			validationResult = CommonValidations.OnlyAlphabeth(customer.CustomerName);
 			if (!validationResult.Item1)
 			{
-				Console.WriteLine($"Value: {validationResult.Item2} invalid");
+				throw new CustomValidationException($"Value: {validationResult.Item2} invalid");
 			}
 
 			validationResult = CommonValidations.OnlyNumeric(customer.IdentificationNo);
