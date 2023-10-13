@@ -8,6 +8,6 @@ namespace ConsoleWithoutGenericHost
 {
 	public interface ITry
 	{
-		void PrintKeyOne();
+		Task PrintKeyOne();
 	}
 }

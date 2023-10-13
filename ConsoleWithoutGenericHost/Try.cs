@@ -16,12 +16,16 @@ namespace ConsoleWithoutGenericHost
 			_services = services;
 		}
 
-		public void PrintKeyOne()
+		public async Task PrintKeyOne()
 		{
-			var servicesProvider = _services.BuildServiceProvider();
-			var settings = servicesProvider.GetService<Settings>();
+			await Task.Run(() =>
+			{
+				var servicesProvider = _services.BuildServiceProvider();
+				var settings = servicesProvider.GetService<Settings>();
 
-			Console.WriteLine($"KeyOne = {settings?.KeyOne}");
+				Console.WriteLine($"KeyOne = {settings?.KeyOne}");
+			});
+			
 		}
 	}
 }
