@@ -32,7 +32,7 @@ namespace ConsoleRegex
 			validationResult = CommonValidations.CheckValueNotAOrB(customer.Gender, "L", "P");
 			if (!validationResult.Item1)
 			{
-				Console.WriteLine($"Value: {validationResult.Item2} invalid");
+				throw new CustomValidationException($"Value: {validationResult.Item2} invalid");
 			}
 
 			validationResult = CommonValidations.OnlyAlphabeth(customer.CustomerName);
@@ -44,19 +44,19 @@ namespace ConsoleRegex
 			validationResult = CommonValidations.OnlyNumeric(customer.IdentificationNo);
 			if (!validationResult.Item1)
 			{
-				Console.WriteLine($"Value: {validationResult.Item2} invalid");
+				throw new CustomValidationException($"Value: {validationResult.Item2} invalid");
 			}
 
 			validationResult = CommonValidations.CheckDatePattern(customer.BirthDate);
 			if (!validationResult.Item1)
 			{
-				Console.WriteLine($"Value: {validationResult.Item2} invalid");
+				throw new CustomValidationException($"Value: {validationResult.Item2} invalid");
 			}
 
 			validationResult = CommonValidations.CheckEmailPattern(customer.Email);
 			if (!validationResult.Item1)
 			{
-				Console.WriteLine($"Value: {validationResult.Item2} invalid");
+				throw new CustomValidationException($"Value: {validationResult.Item2} invalid");
 			}
 		}
 	}

@@ -11,7 +11,7 @@ namespace ConsoleRegex
 			Customer customer = new()
 			{
 				CustomerName = "Alam1",
-				Gender = "k",
+				Gender = "L",
 				IdentificationNo = "1234567890",
 				Email = "alam123@gmail.com",
 				BirthDate = "01/06/1997"

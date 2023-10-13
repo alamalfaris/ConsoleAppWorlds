@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleRegex
 {
+	/// <summary>
+	/// Custom exception class for validation
+	/// </summary>
 	[Serializable]
 	public class CustomValidationException : Exception
 	{
