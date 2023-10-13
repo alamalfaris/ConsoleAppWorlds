@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAsync3", "ConsoleAsy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRegex", "ConsoleRegex\ConsoleRegex.csproj", "{53DCDA4E-606E-4754-9378-293A0BAA7665}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTryCatch", "ConsoleTryCatch\ConsoleTryCatch.csproj", "{3D6AD1E1-8C7C-410A-A3F5-88FBDB4E442B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{53DCDA4E-606E-4754-9378-293A0BAA7665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53DCDA4E-606E-4754-9378-293A0BAA7665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53DCDA4E-606E-4754-9378-293A0BAA7665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6AD1E1-8C7C-410A-A3F5-88FBDB4E442B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6AD1E1-8C7C-410A-A3F5-88FBDB4E442B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6AD1E1-8C7C-410A-A3F5-88FBDB4E442B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6AD1E1-8C7C-410A-A3F5-88FBDB4E442B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
